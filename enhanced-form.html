@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2 Assignment</title>
+</head>
+<body>
+    <header>
+    <h1>HTML5 Content & Form Enhancement</h1>
+    <p>This page demonstrates enhanced HTML5 content using lists, tables, and embedded media, followed by a comprehensive form example.</p>
+  </header>
+
+  <!-- Section: Lists -->
+  <section>
+    <h2>Top 3 HTML5 Features</h2>
+    <ol type="A">
+      <li>Semantic Elements (e.g., &lt;article&gt;, &lt;section&gt;)</li>
+      <li>Multimedia Support (audio, video)</li>
+      <li>Built-in Form Validation</li>
+    </ol>
+
+    <h3>Key HTML5 Form Input Types</h3>
+    <ul type="square">
+      <li>email</li>
+      <li>tel</li>
+      <li>url</li>
+      <li>date</li>
+      <li>range</li>
+    </ul>
+  </section>
+
+  <!-- Section: Table -->
+  <section>
+    <h2>HTML5 Input Types Comparison</h2>
+    <table>
+      <thead>
+        <caption>Comparison of Common HTML5 Input Types and Their Uses</caption>
+        <tr>
+          <th>Type</th>
+          <th>Example</th>
+          <th>Purpose</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>email</td>
+          <td><code>&lt;input type="email"&gt;</code></td>
+          <td>Validates email format</td>
+        </tr>
+        <tr>
+          <td>date</td>
+          <td><code>&lt;input type="date"&gt;</code></td>
+          <td>Choose a date with calendar picker</td>
+        </tr>
+        <tr>
+          <td>range</td>
+          <td><code>&lt;input type="range"&gt;</code></td>
+          <td>Select a value from a range</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Section: Media -->
+  <section>
+    <h2>Embedded Media</h2>
+
+    <h3>Image</h3>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ73eXrnZTFeclHnr79fF3i4uBJBmNrW7xJxA&s" alt="Sample Placeholder Image" width="300" style="width:300px ; height:300px ;  margin-left:15px;">
+
+    
+
+    <h3>Audio</h3>
+    <audio controls>
+      <source src="https://sample-videos.com/audio/mp3/crowd-cheering.mp3" type="audio/mpeg">
+       Your browser does not support the audio element.
+    </audio>
+
+    <h3>Video</h3>
+    <video controls width="320">
+      <source src="https://media.w3.org/2010/05/bunny/movie.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <!-- Section: HTML5 Form -->
+  <section class="form-section">
+    <h2>Registration Form</h2>
+    <form action="#" method="post" autocomplete="on" style="border: 3px sienna solid;">
+
+      <fieldset >
+        <legend>Personal Information</legend> <br>
+
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Write your name" required minlength="3"> <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="yourname@example.com" required> <br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="+1234567890" required> <br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required> <br><br> 
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend> <br>
+
+        <label for="color">Favorite Color:</label>
+        <input type="color" id="color" name="color"> <br><br>
+
+        <label for="experience">HTML Experience (1-10):</label>
+        <input type="range" id="experience" name="experience" min="1" max="10"> <br><br>
+
+        <label for="browser">Preferred Browser:</label>
+        <select id="browser" name="browser" required>
+          <option value="none">---Select One---</option>
+          <option value="chrome">Google Chrome</option>
+          <option value="firefox">Firefox</option>
+          <option value="safari">Safari</option>
+          <option value="edge">Microsoft Edge</option>
+        </select> <br><br>
+
+        <label for="bio">Short Bio:</label>
+        <textarea id="bio" name="bio" rows="5" cols="20" placeholder="Tell us about yourself..." minlength="10" required></textarea> <br><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Setup</legend>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" pattern="^[a-zA-Z0-9_]{5,15}$" placeholder="5-15 characters" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" minlength="6" required>
+
+        <label>
+          <input type="checkbox" name="terms" required>
+          I agree to the terms and conditions
+        </label>
+
+      </fieldset>
+
+      <input type="submit" value="Register">
+      <input type="reset" value="Reset">
+
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Esther. All rights reserved.</p>
+  </footer>
+</body>
+</html>
